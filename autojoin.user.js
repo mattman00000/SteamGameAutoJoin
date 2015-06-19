@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name	[geekahedron] Steam Game AutoJoin
 // @namespace	https://github.com/geekahedron/SteamGameAutoJoin/
-// @version	2.1
+// @version	2.1.1
 // @description	Auto-join script for 2015 Summer Steam Monster Minigame
 // @author	geekahedron
 // @match	*://steamcommunity.com/minigame
@@ -142,7 +142,7 @@ function JoinGameHelper_Count( gameid, count )
             {
             	console.log( code + ' Error joining game ' + gameid + ': ' + msg);
             	// 2.0.3 try a few times on a full room, just for fun
-            	// 2.0.4 increase to 500
+            	// 2.1.1 increase to 500
             	if (count < 500)
             	{
             		JoinGameHelper_Count(gameid, count+1);
