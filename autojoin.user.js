@@ -142,8 +142,7 @@ function JoinGameHelper_Count( gameid, count )
             {
             	console.log( code + ' Error joining game ' + gameid + ': ' + msg);
             	// 2.0.3 try a few times on a full room, just for fun
-            	// 2.1.1 increase to 500
-            	if (count < 500)
+            	if (count < 5)
             	{
             		JoinGameHelper_Count(gameid, count+1);
             	} else {
